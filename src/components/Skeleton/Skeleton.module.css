@@ -1,0 +1,10 @@
+.box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.spinner {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}

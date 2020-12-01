@@ -1,0 +1,35 @@
+{
+  "admin": {
+      "logIn": "lors1998",
+      "password": "lors1998",
+      "token": "asdasdasdas12312213"
+    },
+  "users": [
+    {
+      "id": 1,
+      "logIn": "lors1998",
+      "password": "lors1234"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "news1",
+      "content": "Heres some content",
+      "timeStamp": "1/12/20"
+    },
+    {
+      "id": 2,
+      "title": "news1",
+      "content": "Heres some content",
+      "timeStamp": "1/12/20"
+    },
+    {
+      "id": 3,
+      "title": "news1",
+      "content": "Heres some content",
+      "timeStamp": "1/12/20"
+    }
+  ]
+
+}

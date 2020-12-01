@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/spaprofilancegroup.iml" filepath="$PROJECT_DIR$/.idea/spaprofilancegroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../JavaScript(6) React Pro/todoapp/.idea/todoapp.iml" filepath="$PROJECT_DIR$/../../JavaScript(6) React Pro/todoapp/.idea/todoapp.iml" />
     </modules>
   </component>
 </project>
