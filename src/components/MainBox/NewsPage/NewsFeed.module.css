@@ -18,6 +18,8 @@
 .newsTitle {
 }
 .newsContent {
+  height: 200px;
+  width: 530px;
 }
 .newsTimeStamp {
   text-align: right;
@@ -44,4 +46,61 @@
   height: 30px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.addNewsClosed {
+  border: 1px solid lightgray;
+  background-color: #a7d1ff;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.addNewsClosed:hover {
+  background-color: #809cf6;
+}
+.addNewsOpened {
+  transition: 0.5s;
+}
+.addNewsOpened div {
+  margin-top: 5px;
+}
+.addNewsOpened div input {
+  border: none;
+  outline: none;
+}
+.options {
+  display: flex;
+}
+.declineNews {
+  width: 100px;
+  margin-top: 5px;
+  border: 1px solid lightgray;
+  background-color: #ff6161;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.acceptNews {
+  text-align: center;
+  width: 100px;
+  margin-top: 5px;
+  border: 1px solid lightgray;
+  background-color: #a7d1ff;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+.acceptNews:hover {
+  background-color: #809cf6;
+}
+.declineNews:hover {
+  background-color: #f61e2f;
 }

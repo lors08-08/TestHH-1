@@ -1,15 +1,21 @@
 import React from "react";
 import styles from "./Body.module.css";
 import MainPage from "../MainPage/MainPage";
-import { useSelector } from "react-redux";
 import NewsFeed from "../NewsPage/NewsFeed";
+import { Redirect, Route, Switch } from "react-router-dom";
 
 function Body() {
-  const mainPageOpened = useSelector((state) => state.news.mainPageOpened);
-
   return (
     <div className={styles.box}>
-      {mainPageOpened ? <MainPage /> : <NewsFeed />}
+      <Switch>
+        <Route exact path="/">
+          <MainPage />
+        </Route>
+        <Route path="/news">
+          <NewsFeed />
+        </Route>
+        <Redirect to="/" />
+      </Switch>
     </div>
   );
 }

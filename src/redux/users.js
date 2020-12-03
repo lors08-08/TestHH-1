@@ -1,7 +1,10 @@
+const localData = JSON.parse(localStorage.getItem("auth"));
+
 const initialState = {
-  login: "",
-  password: "",
-  isAdmin: null,
+  ...localData,
+
+  authorizing: false,
+  error: null,
 };
 
 function users(state = initialState, action) {
@@ -9,10 +12,32 @@ function users(state = initialState, action) {
     case "users/logIn/start":
       return {
         ...state,
-        authorization: true,
+        authorizing: true,
+        error: false,
       };
     case "users/logIn/succeed":
-      return action.payload[0];
+      return {
+        ...state,
+        ...action.payload[0],
+        authorizing: false,
+      };
+
+    case "users/logIn/failed":
+      return {
+        ...state,
+        authorizing: false,
+        error: true,
+      };
+    case "users/deleteLogPass":
+      return {
+        ...state,
+        login: undefined,
+        password: undefined,
+        isAdmin: false,
+        id: undefined,
+        error: false,
+      };
+
     default:
       return state;
   }

@@ -6,6 +6,9 @@ const initialState = {
   mainPageOpened: true,
   newsFeedOpened: false,
   popUpOpened: false,
+  addingNews: false,
+  confirming: false,
+  searchValue: "",
 };
 
 function news(state = initialState, action) {
@@ -43,6 +46,45 @@ function news(state = initialState, action) {
       return {
         ...state,
         popUpOpened: false,
+      };
+
+    case "news/add/start":
+      return {
+        ...state,
+        addingNews: true,
+      };
+    case "news/add/succeed":
+      return {
+        ...state,
+        items: [...state.items, action.payload],
+        addingNews: false,
+      };
+    case "news/confirmed/start":
+      return {
+        ...state,
+        confirming: true,
+      };
+    case "news/confirmed/succeed":
+      return {
+        ...state,
+        confirming: false,
+        items: [...state.items, action.payload],
+      };
+    case "news/decline/start":
+      return {
+        ...state,
+        deleting: true,
+      };
+    case "news/decline/succeed":
+      return {
+        ...state,
+        items: state.items.filter((item) => item.id !== action.payload),
+        deleting: false,
+      };
+    case "news/setSearchValue":
+      return {
+        ...state,
+        searchValue: action.payload,
       };
     default:
       return state;

@@ -1,8 +1,8 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
-import application from "../redux/users";
-import logProcedures from "../redux/logProcedures";
-import users from "../redux/users";
-import news from "../redux/news";
+import application from "./users";
+import logProcedures from "./logProcedures";
+import users from "./users";
+import news from "./news";
 import thunk from "redux-thunk";
 import logger from "redux-logger/src";
 

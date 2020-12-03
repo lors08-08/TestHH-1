@@ -5,11 +5,11 @@ import "normalize.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
-import index from "./store";
+import store from "./redux";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={index}>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
