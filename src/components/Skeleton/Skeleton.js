@@ -10,7 +10,7 @@ function Skeleton() {
         <Spinner animation="border" role="status" variant="secondary">
           <span className="sr-only">Loading...</span>
         </Spinner>
-        <div>Пожалуйста, подождите идет загрузка</div>
+        <div>Пожалуйста, подождите идет новостей</div>
       </div>
     </div>
   );

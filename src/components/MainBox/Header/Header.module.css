@@ -1,0 +1,46 @@
+.box {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d3d3d369;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 15px;
+  transition: 0.6s;
+}
+.box:hover {
+  box-shadow: 0 0 15px gray;
+  transition: 0.6s;
+}
+.newsandMain {
+  display: flex;
+  justify-content: space-around;
+}
+.newsandMain div {
+  margin-left: 100px;
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.newsandMain div:hover {
+  color: #5296ff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.logInText {
+  font-size: 21px;
+  font-weight: 400;
+  margin-right: 100px;
+  text-transform: uppercase;
+}
+.logInTextOpened {
+  color: #5296ff;
+  font-size: 21px;
+  font-weight: 400;
+  margin-right: 100px;
+  text-transform: uppercase;
+}
+.logInText:hover {
+  color: #5296ff;
+  transition: 0.3s;
+  cursor: pointer;
+}

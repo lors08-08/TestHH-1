@@ -1,6 +1,5 @@
 const initialState = {
   authorizing: false,
-  token: "",
   error: false
 };
 
