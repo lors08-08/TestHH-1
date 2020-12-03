@@ -5,6 +5,7 @@ import styles from "./App.module.css"
 import Header from "./components/MainBox/Header/Header";
 import Body from "./components/MainBox/Body/Body";
 import {loadNews} from "./redux/actions";
+import {BrowserRouter, Route} from "react-router-dom";
 
 function App() {
   const dispatch = useDispatch()
@@ -18,10 +19,15 @@ function App() {
     return <Skeleton />
   }
   return (
-    <div className={styles.box}>
-      <Header />
-      <Body />
-    </div>
+    <BrowserRouter>
+      <Route path="/:id?">
+        <div className={styles.box}>
+          <Header />
+          <Body />
+        </div>
+      </Route>
+    </BrowserRouter>
+
   );
 }
 

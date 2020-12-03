@@ -11,6 +11,12 @@ export function loadNews() {
       });
   };
 }
+
+export function openNews() {
+  return (dispatch) => {
+    dispatch({ type: "news/newsTab/open" });
+  };
+}
 export function startLogIn(login, password) {
   return (dispatch) => {
     dispatch({ type: "users/logIn/start" });
@@ -22,12 +28,6 @@ export function startLogIn(login, password) {
           payload: json,
         });console.log(json)
       });
-  };
-}
-
-export function openNews() {
-  return (dispatch) => {
-    dispatch({ type: "news/newsTab/open" });
   };
 }
 

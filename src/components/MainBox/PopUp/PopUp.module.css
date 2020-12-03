@@ -60,7 +60,7 @@
 .logIn {
     margin-top: 15px;
 }
-.logInButton {
+.logIn button {
     background-color: #5296ff;
     border: none;
     padding: 5px 10px 5px 10px;
@@ -70,10 +70,10 @@
     width: 100px;
     transition: .5s;
 }
-.logInButton:focus {
+.logIn button:focus {
     outline: none;
 }
-.logInButton:hover {
+.logIn button:hover {
     background-color: #2578ff;
     box-shadow: 0 0 10px gray inset;
     transition: .5s;

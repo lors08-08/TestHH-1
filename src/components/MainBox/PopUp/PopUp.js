@@ -1,31 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./PopUp.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { closePopUp, startLogIn } from "../../../redux/actions";
+import { useHistory } from "react-router-dom";
 
 function PopUp() {
   const dispatch = useDispatch();
+  const history = useHistory();
   const isAdmin = useSelector((state) => state.users.isAdmin);
   const isLogged = useSelector((state) => state.users.login);
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
-  const [passLength, setPassLength] = useState(null)
-  console.log(isLogged.length);
+
+  useEffect(() => {
+    history.push("/");
+  },[history]);
+
   const handleChangeLogin = (e) => {
     setLogin(e.target.value);
-    setPassLength(null)
   };
+
   const handleChangePassword = (e) => {
     setPassword(e.target.value);
-    setPassLength(null)
   };
 
   const handleLogIn = () => {
-    if(login.length && password.length >= 6) {
+    if (login.length && password.length >= 6) {
       dispatch(startLogIn(login, password));
       localStorage.setItem("login", login);
       localStorage.setItem("password", password);
-    } else return setPassLength(true)
+    } else return null;
   };
 
   return (
@@ -64,10 +68,13 @@ function PopUp() {
             onChange={handleChangePassword}
           />
         </div>
-        {passLength && (<div className={styles.passLength}>Пароль слишком короткий</div>)}
-        {(isLogged.length === 0 && isAdmin) && (<div className={styles.passLength}>Неверный логин или пароль</div>)}
-        <div className={styles.logIn} onClick={handleLogIn}>
-          <button className={styles.logInButton}>ВОЙТИ</button>
+        {(isLogged.length === 0 && isAdmin) && (
+          <div className={styles.passLength}>Неверный логин или пароль</div>
+        )}
+        <div className={styles.logIn}>
+          <button onClick={handleLogIn}>
+            ВОЙТИ
+          </button>
         </div>
       </div>
     </>

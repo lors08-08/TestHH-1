@@ -18,25 +18,25 @@
       "id": 1,
       "title": "news1",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad\n                minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n                aliquip ex ea commodo consequat. Duis aute irure dolor in\n                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n                culpa qui officia deserunt mollit anim id est laborum.",
-      "timeStamp": "1/12/20",
-      "userId": "lors1998",
-      "confirmed": "true"
+      "date": "1/12/20",
+      "userId": 1,
+      "confirmed": true
     },
     {
       "id": 2,
       "title": "news2",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad\n                minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n                aliquip ex ea commodo consequat. Duis aute irure dolor in\n                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n                culpa qui officia deserunt mollit anim id est laborum.",
-      "timeStamp": "1/12/20",
-      "userId": "lors1998",
-      "confirmed": "true"
+      "date": "1/12/20",
+      "userId": 1,
+      "confirmed": true
     },
     {
       "id": 3,
       "title": "news3",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad\n                minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n                aliquip ex ea commodo consequat. Duis aute irure dolor in\n                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n                culpa qui officia deserunt mollit anim id est laborum.",
-      "timeStamp": "1/12/20",
-      "userId": "lors1998",
-      "confirmed": "true"
+      "date": "1/12/20",
+      "userId": 1,
+      "confirmed": true
     }
   ]
 
