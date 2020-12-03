@@ -1,7 +1,7 @@
 const initialState = {
   login: "",
   password: "",
-  isAdmin: null
+  isAdmin: null,
 };
 
 function users(state = initialState, action) {
@@ -9,10 +9,10 @@ function users(state = initialState, action) {
     case "users/logIn/start":
       return {
         ...state,
-        authorization: true
-      }
+        authorization: true,
+      };
     case "users/logIn/succeed":
-      return action.payload[0]
+      return action.payload[0];
     default:
       return state;
   }

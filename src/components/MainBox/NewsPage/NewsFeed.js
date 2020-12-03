@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import styles from "./NewsFeed.module.css";
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -8,8 +8,8 @@ function NewsFeed(props) {
   const history = useHistory();
 
   useEffect(() => {
-    history.push("News")
-  },[history])
+    history.push("News");
+  }, [history]);
 
   return (
     <>

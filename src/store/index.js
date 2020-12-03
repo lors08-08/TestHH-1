@@ -1,4 +1,4 @@
-import {applyMiddleware, combineReducers, createStore} from "redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import application from "../redux/users";
 import logProcedures from "../redux/logProcedures";
 import users from "../redux/users";
@@ -10,8 +10,8 @@ const rootReducer = combineReducers({
   application,
   logProcedures,
   users,
-  news
+  news,
 });
-const store = createStore(rootReducer, applyMiddleware(thunk, logger));
+const index = createStore(rootReducer, applyMiddleware(thunk, logger));
 
-export default store
+export default index;

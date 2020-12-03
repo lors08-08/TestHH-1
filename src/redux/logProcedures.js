@@ -1,6 +1,6 @@
 const initialState = {
   authorizing: false,
-  error: false
+  error: false,
 };
 
 function logProcedures(state = initialState, action) {

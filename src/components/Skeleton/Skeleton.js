@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 import styles from "./Skeleton.module.css";
 import Spinner from "react-bootstrap/Spinner";
-
 
 function Skeleton() {
   return (

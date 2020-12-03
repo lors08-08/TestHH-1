@@ -1,11 +1,11 @@
-import React from 'react';
-import styles from "./Body.module.css"
+import React from "react";
+import styles from "./Body.module.css";
 import MainPage from "../MainPage/MainPage";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 import NewsFeed from "../NewsPage/NewsFeed";
 
 function Body() {
-  const mainPageOpened = useSelector((state) => state.news.mainPageOpened)
+  const mainPageOpened = useSelector((state) => state.news.mainPageOpened);
 
   return (
     <div className={styles.box}>

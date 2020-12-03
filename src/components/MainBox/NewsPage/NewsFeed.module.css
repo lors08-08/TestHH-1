@@ -1,49 +1,47 @@
 .newsItem {
-    border-radius: 10px;
-    box-shadow: 0 0 20px #e3e3e3;
-    padding: 30px;
-    display: flex;
-    min-height: 300px;
-    margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #e3e3e3;
+  padding: 30px;
+  display: flex;
+  min-height: 300px;
+  margin-top: 30px;
 }
 .newsItem div {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 .newsPicture {
-    max-width: 350px;
-    min-width: 300px;
-    height: 300px;
-    background-color: lightgray;
+  max-width: 350px;
+  min-width: 300px;
+  height: 300px;
+  background-color: lightgray;
 }
 .newsTitle {
-
 }
 .newsContent {
-
 }
 .newsTimeStamp {
-    text-align: right;
-    padding-top: 10px;
+  text-align: right;
+  padding-top: 10px;
 }
 .searchTitle {
-    font-size: 42px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #4e4e4e;
-    text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4e4e4e;
+  text-align: center;
 }
 .searchBar {
-    width: 40%;
-    padding: 10px;
-    margin: auto;
+  width: 40%;
+  padding: 10px;
+  margin: auto;
 }
 .searchBar input {
-    width: 100%;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background-color: #efefef;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #efefef;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }

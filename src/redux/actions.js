@@ -26,7 +26,8 @@ export function startLogIn(login, password) {
         dispatch({
           type: "users/logIn/succeed",
           payload: json,
-        });console.log(json)
+        });
+        console.log(json);
       });
   };
 }

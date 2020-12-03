@@ -1,11 +1,11 @@
 const initialState = {
   loading: false,
   items: [],
-  userId:"",
+  userId: "",
   confirm: null,
   mainPageOpened: true,
   newsFeedOpened: false,
-  popUpOpened: false
+  popUpOpened: false,
 };
 
 function news(state = initialState, action) {
@@ -14,36 +14,36 @@ function news(state = initialState, action) {
       return {
         ...state,
         loading: true,
-        mainPageOpened: true
-      }
+        mainPageOpened: true,
+      };
     case "news/load/succeed":
       return {
         ...state,
         loading: false,
-        items: action.payload
-      }
+        items: action.payload,
+      };
     case "news/newsTab/open":
       return {
         ...state,
         mainPageOpened: false,
         newsFeedOpened: true,
-      }
+      };
     case "news/mainPageTab/open":
       return {
         ...state,
         mainPageOpened: true,
         newsFeedOpened: false,
-      }
+      };
     case "news/popUp/open":
       return {
         ...state,
-        popUpOpened: true
-      }
+        popUpOpened: true,
+      };
     case "news/popUp/close":
       return {
         ...state,
-        popUpOpened: false
-      }
+        popUpOpened: false,
+      };
     default:
       return state;
   }

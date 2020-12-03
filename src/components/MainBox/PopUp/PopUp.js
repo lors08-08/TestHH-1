@@ -14,7 +14,7 @@ function PopUp() {
 
   useEffect(() => {
     history.push("/");
-  },[history]);
+  }, [history]);
 
   const handleChangeLogin = (e) => {
     setLogin(e.target.value);
@@ -68,13 +68,11 @@ function PopUp() {
             onChange={handleChangePassword}
           />
         </div>
-        {(isLogged.length === 0 && isAdmin) && (
+        {isLogged.length === 0 && isAdmin && (
           <div className={styles.passLength}>Неверный логин или пароль</div>
         )}
         <div className={styles.logIn}>
-          <button onClick={handleLogIn}>
-            ВОЙТИ
-          </button>
+          <button onClick={handleLogIn}>ВОЙТИ</button>
         </div>
       </div>
     </>
